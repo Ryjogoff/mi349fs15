@@ -1,0 +1,29 @@
+body {
+  background-color: #232323;
+  color: white;
+}
+h1 {
+  font-family: 'Fjalla One', sans-serif;
+  text-align: center;
+  font-size: 50px;
+}
+.column {
+  font-size: 20px;
+  float: left;
+  padding: 10px;
+}
+@media (min-width: 400px) and (max-width: 799px) {
+  .column {
+      width: 95%;
+  }
+}
+@media (min-width: 800px) and (max-width: 1199px) {
+  .column {
+      width: 45%;
+  }
+}
+@media (min-width: 1200px) {
+  .column {
+      width: 30%;
+  }
+}
