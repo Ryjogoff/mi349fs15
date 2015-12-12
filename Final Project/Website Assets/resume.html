@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" type="text/css" href="myStyle.css">
+  <link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+  <title>Resume</title>
+</head>
+<body>
+  <h1>Ryan Goff</h1>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About Me</a></li>
+    <li><a class="active" href="resume.html">My Resume</a></li>
+    <li><a href="records.html">My Record Collection</a><li>
+  </ul>
+  <p>On this page you will find my resume is available to be viewed with a click of the toggle button below.</p>
+  <p>You can then download it if you would like by clicking on the save button available in the PDF viewer.</p>
+  <br>
+  <div class="resumeButton"><button id="toggle-button">Show/Hide Resume</button></div>
+  <br>
+  <div class="target"><embed type="application/pdf" src="Resume_RJG.pdf" width="800px" height="1100px"></embed></div>
+  <script type="text/javascript" src="myScript.js">
+  document.getElementById('toggle-button').addEventListener('click', function () {
+    toggle(document.querySelectorAll('.target'));
+  });
+  </script>
+</body>

@@ -1,0 +1,77 @@
+body {
+  background-color: #232323;
+  color: white;
+  font-family: 'Fjalla One', sans-serif;
+}
+h1 {
+  text-align: center;
+  font-size: 75px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: gray;
+  border: 1px solid #CCCCCC;
+}
+li {
+  float: left;
+}
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover:not(.active) {
+  background-color: black;
+}
+.active {
+  background-color: #CCCCCC;
+}
+.target {
+  display: none;
+  text-align: center;
+}
+p {
+  font-size: 20px;
+  text-align: center;
+  width: 100%;
+}
+.resumeButton {
+  text-align: center;
+}
+a {
+  color: gray;
+}
+.games {
+  float: none;
+}
+h2 {
+  text-align: center;
+  font-weight: bolder;
+}
+img {
+  width: 200px;
+  height: 250px;
+  border: 5px solid gray;
+}
+.records {
+  width: 300px;
+  height: 300px;
+  border: 5px solid white;
+}
+/*Apple Iphone 6 Media Query*/
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  h1 {
+    font-size: 200px;
+  }
+}
+/*Samsung Galaxy S5 Media Query*/
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
+  h1 {
+    font-size: 200px;
+  }
+}
